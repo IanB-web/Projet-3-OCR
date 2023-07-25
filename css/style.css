@@ -23,7 +23,7 @@ body {
     display: flex;
     align-items: flex-start;
     padding-right: 0%;
-    gap: 40%;
+    justify-content: space-between;
     flex-direction: row;
  }
 
@@ -58,7 +58,6 @@ gap: 1em;
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -107,6 +106,29 @@ gap: 1em;
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements .card{
+    width: 35%;
+    height: auto;
+
+}
+.hebergement-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergement-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.hebergement-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 /****** Populaires ***********/
