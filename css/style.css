@@ -16,15 +16,15 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     
 }
- header {
+ .main-header {
     display: flex;
     align-items: flex-start;
     padding-right: 0%;
     gap: 40%;
     flex-direction: row;
-    color: var(--main-color);
  }
 
 header img{
@@ -42,6 +42,7 @@ main{
 .selection_group{
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
 }
 
 .menu{
