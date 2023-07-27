@@ -15,7 +15,8 @@
 </head>
 
 <body>
-        <header class="main-header">
+    <!-- Bandeau header -->
+        <header class="top-header">
             <img src="./images/logo/Booki.png" alt="Booki" title="Booki">
             <nav class="menu">
                 <ol class="navButtons">
@@ -24,18 +25,36 @@
                 </ol>
             </nav>
         </header>
-        
+    <!-- Contenu principal -->    
         <main class="main-container">
-            <header>
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre-ville ou en pleine nature</p>
+            <!-- header contenu principal -->
+            <header class="main-header">
+                <div class="main-title">
+                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+                <!-- section pour la recherche et les filtres-->
+                
+                <form method="get" action="">
+                    <section class="search-bar">
+                        <div class="location-dot"><i class="fa-2xl fa-solid fa-location-dot"></i></div>  
+                        <div class="search">
+                        <input 
+                            type="text" 
+                            name="Recherche"
+                            placeholder="Marseille, France">
+                        </div>  
+                        <div class="search-button"><button>Rechercher</button></div> 
+                    </section>
+                </form>
+                
             </header>
 
             <div class="hebergements-and-populaires">
-                
+                <!-- section des hébergements recherchés -->
                 <section class="hebergements">
                     <div class="hebergement-title">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
+                        <h2>Hébergements à Marseille</h2>
                     </div>
 
                     <div class="hebergement-cards">
@@ -151,7 +170,7 @@
                 </section>
             
                 </section>
-                
+                <!-- section des hébergements populaires -->
                 <section class="populaires">
                     
                     <div class="populaires-title">
@@ -217,7 +236,7 @@
                     </div>
                 </section>
             </div>
-
+        <!-- Footer contenu principal -->
         <footer>
             <div class="box-footer">
                 <h2>à propos</h2>
