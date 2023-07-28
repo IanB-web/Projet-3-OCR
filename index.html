@@ -18,23 +18,25 @@
     <!-- Bandeau header -->
         <header class="top-header">
             <img src="./images/logo/Booki.png" alt="Booki" title="Booki">
-            <nav class="menu">
+            <nav>
                 <ol class="navButtons">
-                    <ul class="navButton"><a href="">Hébergements</a></ul>
-                    <ul class="navButton"><a href="">Activités</a></ul>
+                    <a href=""><ul class="navButton">Hébergements</ul></a>
+                    <a href=""><ul class="navButton">Activités</ul></a>
                 </ol>
             </nav>
         </header>
     <!-- Contenu principal -->    
         <main class="main-container">
+
             <!-- header contenu principal -->
             <header class="main-header">
-                <div class="main-title">
+                <section class="main-title">
                     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
-                </div>
-                <!-- section pour la recherche et les filtres-->
+                </section>
                 
+
+                <!-- section pour la recherche -->
                 <form method="get" action="">
                     <section class="search-bar">
                         <div class="location-dot"><i class="fa-xl fa fa-location-dot"></i></div>  
@@ -46,7 +48,17 @@
                         <input type="submit" name="submit" class="search-button" value="Rechercher">
                     </section>
                 </form>
-                
+
+                <!-- section pour les filtres-->
+                <section class="filter-bar">
+                    <h2>Filtres</h2>
+                    <a href="#"><div><i class="fa fa-solid fa-money-bill-wave"></i>
+                    <h2>Économique</h2></div></a>
+                    <a href=""><div></div></a>
+                    <a href=""><div></div></a>
+                    <a href=""><div></div></a>
+                </section>
+
             </header>
 
             <div class="hebergements-and-populaires">
@@ -235,6 +247,7 @@
                     </div>
                 </section>
             </div>
+
         <!-- Footer contenu principal -->
         <footer>
             <div class="box-footer">
