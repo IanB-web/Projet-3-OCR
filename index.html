@@ -14,18 +14,18 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <!-- Bandeau header -->
+    <body>
+        <!-- Bandeau header -->
         <header class="top-header">
             <img src="./images/logo/Booki.png" alt="Booki" title="Booki">
             <nav>
                 <ol class="navButtons">
-                    <a href=""><ul class="navButton">Hébergements</ul></a>
-                    <a href=""><ul class="navButton">Activités</ul></a>
+                    <a href="#hebergements"><ul class="navButton">Hébergements</ul></a>
+                    <a href="#activities"><ul class="navButton">Activités</ul></a>
                 </ol>
             </nav>
         </header>
-    <!-- Contenu principal -->    
+        <!-- Contenu principal -->    
         <main class="main-container">
 
             <!-- header contenu principal -->
@@ -54,17 +54,22 @@
                     <h2>Filtres</h2>
                     <a href="#"><div><i class="fa fa-solid fa-money-bill-wave"></i>
                     <h2>Économique</h2></div></a>
-                    <a href=""><div><i class="fa fa-solid fa-money-bill-wave"></i>
-                        <h2>Économique</h2></div></a>
-                    <a href=""><div><i class="fa fa-solid fa-money-bill-wave"></i>
-                        <h2>Économique</h2></div></a>
-                    <a href=""><div><i class="fa fa-solid fa-money-bill-wave"></i>
-                        <h2>Économique</h2></div></a>
+                    <a href=""><div><i class="fa fa-solid fa-person"></i>
+                        <h2>Familial</h2></div></a>
+                    <a href=""><div><i class="fa fa-solid fa-heart"></i>
+                        <h2>Romantique</h2></div></a>
+                    <a href=""><div><i class="fa fa-solid fa-fire"></i>
+                        <h2>Nos pépites</h2></div></a>
                 </section>
-
+                <!-- section infobar -->
+                <section class="infobar">
+                    <div class="info-icon"><i class="fa-1x fa-solid fa-info"></i></div>
+                    <div>Plus de 500 logements sont disponibles dans cette ville</div>
+                </section>
             </header>
 
-            <div class="hebergements-and-populaires">
+            <!-- hébergements et populaires -->
+            <div class="hebergements-and-populaires" id="hebergements">
                 <!-- section des hébergements recherchés -->
                 <section class="hebergements">
                     <div class="hebergement-title">
@@ -179,7 +184,9 @@
                                 </div>
                             </div>
                         </article>
-                    
+                    </div>
+                    <div>
+                        <h2>Afficher plus</h2>
                     </div>
                 </section>
             
@@ -251,8 +258,8 @@
                 </section>
             </div>
 
-        <!-- Footer contenu principal -->
-        <footer>
+             <!-- Footer contenu principal -->
+            <footer>
             <div class="box-footer">
                 <h2>à propos</h2>
                 <p></p>
@@ -263,13 +270,13 @@
             <div class="box-footer"></div>
                 <h2>Assistance</h2>
                 <p></p>
-        </footer>
+            </footer>
         
         </main>
         
         
     
     
-</body>
+    </body>
 
 </html>
