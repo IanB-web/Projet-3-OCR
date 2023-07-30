@@ -77,6 +77,9 @@ p {
 
 .card-title {
     font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .euro {
@@ -367,9 +370,58 @@ h3.card-title {
     margin-bottom: 5px;
 }
 
+/******* Activities ************/
 
+.activities {
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+    gap:30px;
+    align-items: flex-start;
+    
+}
 
+.activities h2 {
+    padding: 0px;;
+}
 
+.activities .block-activities {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.activitie-card {
+    display: flex;
+    height: 439px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.block-activities img {
+    height: 380px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 20px 20px 0px 0px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.activitie-card p {
+    display: flex;
+    padding: 20px 19px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 0px 0px 20px 20px;
+    background: var(--white, #FFF);
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
