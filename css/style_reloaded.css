@@ -734,20 +734,21 @@ button {
     }
 }
 
+@media screen and (max-width:535px) {
+  .page-footer {
+        flex-direction: column;
+        padding: 30px;
+    }  
+}
+
 @media screen and (max-width: 460px) {
    .hebergement__card {
         width: 100%;
     } 
-    
-    .page-footer {
-        flex-direction: column;
-        padding: 30px;
-    }
 }
 
 @media screen and (max-width: 400px) {
     .filter {
         width:100%
     }
-    
 }
