@@ -23,7 +23,9 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    .card__title {
+        text-decoration: underline;
+    }
 }
 
 body {
@@ -41,6 +43,7 @@ button {
     font-size: 16px;
     font-weight: 400;
     text-decoration: none;
+    width: 100%;
 }
 
 .icon {
@@ -61,6 +64,7 @@ button {
     .box-footer__titles {
         font-size: 18px;
         font-weight: 700;
+        background-color: transparent;
     }
 
     .card__title {
@@ -174,7 +178,8 @@ button {
             background: var(--white-color);
             font-size: 18px;
             font-weight: 800;
-            height: 48px;  
+            height: 48px;
+            width:100%;
         }
 
         .search__button {
@@ -269,12 +274,15 @@ button {
         }
 
         .info-icon {
+            display: flex;
             border: 2px solid var(--filter-border-color);
             width: 24px;
             height:24px;
             border-radius: 25px;
             text-align: center;
-            font-size: 20px;
+            font-size: 14px;
+            align-items: center;
+            justify-content: center;
         }
 
 /****** content *******/
@@ -293,6 +301,9 @@ button {
     transition:1s;
 }
 
+.card__subtitle, .card__rating:hover {
+    text-decoration: none;
+}
     /****** hebergements ******/
     .hebergements {
         display: flex;
@@ -474,7 +485,7 @@ button {
         transition: 0.5s;
     }
 
-    /******** footer *********/
+     /******** footer *********/
     .page-footer {
         display: flex;
         flex-direction: row;
@@ -500,6 +511,10 @@ button {
         display: flex;
         flex-direction: column;
         gap: 15px;
+    }
+
+    .footer__links:hover {
+        text-decoration: underline;
     }
 
 
@@ -584,6 +599,35 @@ button {
     .activitie--card {
         width: calc(100%/2 - 15px);
     }
+
+    .page-footer {
+        flex: inherit;
+    }
+
+    .box-footer {
+        width: 50%;
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width:810px) {
+        .filters {
+        width: 100%;
+        gap: inherit;
+
+    }
+
+    .filter {
+        width: calc(100%/2 - 15px);
+        gap:inherit
+    }
+
+    .filter__txt {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width:750px) {
@@ -650,24 +694,6 @@ button {
         justify-content: space-between;
     }
 
-    .filters {
-        width: 100%;
-        gap: inherit;
-
-    }
-
-    .filter {
-        width: calc(100%/2 - 15px);
-        gap:inherit
-    }
-
-    .filter__txt {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        font-size: 14px;
-    }
-
     .content { 
         padding: 0;
     }
@@ -713,4 +739,11 @@ button {
         flex-direction: column;
         padding: 30px;
     }
+}
+
+@media screen and (max-width: 400px) {
+    .filter {
+        width:100%
+    }
+    
 }
