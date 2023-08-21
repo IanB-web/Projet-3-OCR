@@ -102,32 +102,33 @@ button {
             gap: 68px;
         }
 
-        .nav__links {
+        .nav__link {
             text-align: center;
- 
             color: black;
-            line-height: 4;
+            border-top: 2px solid transparent;
+            padding-top: 16px;
+            width: 100%;
+            height:100%;
         }
 
-        .nav__links:hover {
-
+        .nav__link:hover {
             border-top: 2px solid var(--main-color);
             color: var(--main-color);
             font-weight: 700;
-            line-height: 18px;
+          
         }
 
-        /*#region NewTodo */
-        .nav__link {
-            line-height: 60px;
+        .nav__links {
+            display: flex;
             color: black;
             font-weight: 700;
         }
-        .nav__link:hover {
-            color: var(--main-color);
-        }
 
-        /*#endregion NewTodo */
+        .nav__links:hover {
+             text-decoration: none;
+        }
+        
+
 
         /***** title *****/
         .presentation {
@@ -197,6 +198,25 @@ button {
 
         .search__button:active {
             background-color: var(--main-color);
+        }
+
+        .find-dot {
+            display: flex;
+            height: 50px;
+            width: 50px;
+            background-color: var(--main-color);
+            border-radius: 15px;
+            display: none;
+            transition: 2s;
+        }
+
+        .find-dot i {
+            display: flex;
+            height: 50px;
+            width: 50px;
+            align-items: center;
+            justify-content: center;
+            color: var(--white-color);
         }
 
         /***** filters *****/
@@ -525,11 +545,11 @@ button {
     }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1440px) {
     
     body {
-        width: 1700px;
-        
+        max-width: 1440px;
+        margin:auto;
     }
     
     .page-header {
@@ -553,6 +573,16 @@ button {
 
     .content__hebergements{
         flex-direction: column-reverse;
+    }
+
+    .activities__cards {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .activitie--card {
+        width: calc(100%/2 - 15px);
     }
 }
 
@@ -589,14 +619,25 @@ button {
     }
 
     .nav__links {
+        display: block;
         width:50%;
         justify-content: center;
-        line-height: 3;
+        border-bottom: 2px solid var(--main-bg-color);
+        padding: 0px 0px 15px 0px;
     }
 
     .nav__links:hover {
-        border-top: inherit;
         border-bottom: 2px solid var(--main-color);
+        color: var(--main-color);
+    }
+
+    .nav__link {
+        border: none;
+        padding: 0;
+    }
+
+    .nav__link:hover {
+        border: none;
     }
 
     .header__content {
@@ -624,6 +665,7 @@ button {
         display: flex;
         width: 100%;
         justify-content: center;
+        font-size: 14px;
     }
 
     .content { 
@@ -652,6 +694,14 @@ button {
     .page-footer {
         width: 100%;
         margin: inherit;}
+
+        .find-dot {
+            display:flex;
+        }
+
+    .search__button {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 460px) {
