@@ -667,7 +667,7 @@ button {
     }
 
     .nav__links {
-        display: block;
+        display: flex;
         width:50%;
         justify-content: center;
         border-bottom: 2px solid var(--main-bg-color);
@@ -677,6 +677,9 @@ button {
     .nav__links:hover {
         border-bottom: 2px solid var(--main-color);
         color: var(--main-color);
+        .nav__link{
+            color: var(--main-color);
+        }
     }
 
     .nav__link {
