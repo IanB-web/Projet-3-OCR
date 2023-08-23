@@ -31,6 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     gap:35px;
+    min-width: 320px;
 }
 
 button {
@@ -189,11 +190,17 @@ button {
             height: 50px;
             border-radius: 0px 15px 15px 0px;
             border:1px solid var(--main-color);
-            color: var(--main-bg-color);
             text-align: center;
             font-size: 18px;
             font-weight: 700;
             cursor: pointer;
+        }
+        .version-computer{
+            color: var(--color-white);
+        }
+
+        .version-mobile {
+            display: none;
         }
 
         .search__button:hover {
@@ -731,8 +738,18 @@ button {
             display:flex;
         }
 
-    .search__button {
+    .version-computer {
         display: none;
+    }
+
+    .version-mobile {
+        display: block;
+    }
+
+    .version-mobile i  {
+        color: var(--color-white);
+        font-size: 18px;
+        
     }
 }
 
@@ -741,12 +758,18 @@ button {
         flex-direction: column;
         padding: 30px;
     }  
+    
+    .hebergement__card {
+        width: 100%;
+    } 
+
+    .activitie__img {
+        height: 180px;
+    }
 }
 
 @media screen and (max-width: 460px) {
-   .hebergement__card {
-        width: 100%;
-    } 
+
 }
 
 @media screen and (max-width: 400px) {
